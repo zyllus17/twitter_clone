@@ -17,19 +17,19 @@ class LoginView extends StatefulWidget {
 }
 
 class _LoginViewState extends State<LoginView> {
+  final appbar = UIConstants.appBar();
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
+  @override
+  void dispose() {
+    super.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final appbar = UIConstants.appBar();
-    final emailController = TextEditingController();
-    final passwordController = TextEditingController();
-
-    @override
-    void dispose() {
-      super.dispose();
-      emailController.dispose();
-      passwordController.dispose();
-    }
-
     return Scaffold(
       appBar: appbar,
       body: Center(
