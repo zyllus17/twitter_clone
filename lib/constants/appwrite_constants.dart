@@ -1,4 +1,4 @@
-class AppWriteConstants {
+class AppwriteConstants {
   static const String databaseId = '63d5418f04c932c7787b';
   static const String projectId = '63d53c8e80607077a36a';
   //ISSUE: App doesn't work on Android
