@@ -5,8 +5,8 @@ import 'package:twitter_clone/constants/constants.dart';
 final appWriteClientProvider = Provider((ref) {
   Client client = Client();
   return client
-      .setEndpoint(AppWriteConstants.endPoint)
-      .setProject(AppWriteConstants.projectId)
+      .setEndpoint(AppwriteConstants.endPoint)
+      .setProject(AppwriteConstants.projectId)
       .setSelfSigned(status: true);
 });
 
